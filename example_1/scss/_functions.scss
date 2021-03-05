@@ -1,0 +1,13 @@
+@import 'variables';
+
+@function set-font-size($size){
+    @return map-get($font-sizes, $size);
+};
+
+@function set-font-weight($weight) {
+    @return map-get($font-weights, $weight);
+}
+
+@function get-image($image-name){
+    @return url(map-get($images, $image-name));
+};

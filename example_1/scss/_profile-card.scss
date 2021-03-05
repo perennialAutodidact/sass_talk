@@ -1,0 +1,131 @@
+@import "variables", "mixins", "functions";
+
+.profile-card {
+  @include rectangle($profile-card-height, $profile-card-width);
+  @include border-radius(10px);
+
+  background-image: get-image("profile-card-bg");
+  background-repeat: no-repeat;
+  background-position: 60% 75%;
+  background-size: cover;
+
+  box-shadow: 0 0 15px $profile-card-shadow;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+
+  .panel {
+    @include rectangle(100%, 96%);
+    @include border-radius(5px);
+
+    background-color: transparentize($profile-card-panel-bg, 0.6);
+    box-shadow: 0px -200px 700px inset $profile-card-panel-bg;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    letter-spacing: 2px;
+  }
+
+  .circle {
+    @include rectangle(150px, auto);
+    @include border-radius(50%);
+
+    background-color: transparentize($profile-card-panel-bg, 0.5);
+    border: 3px solid $profile-card-highlight;
+    margin: 1rem;
+    padding: .75rem;
+  }
+
+  .bio {
+    @include border-radius(5px);
+
+    background-color: transparentize($fern-green, 0.4);
+    margin: 0.5rem 0.25rem 1rem;
+    padding: 0.5rem 1rem .5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: $primary-font;
+
+    .name {
+      color: $font-color-secondary;
+      font-family: $primary-font;
+      font-size: set-font-size("md");
+      font-weight: set-font-weight("regular");
+
+      margin-bottom: 0.5rem;
+
+      .first-letter {
+        font-size: set-font-size("lg");
+      }
+    }
+
+    .main-title {
+      color: $font-color-primary;
+      font-family: $secondary-font;
+      font-size: set-font-size("md");
+      font-weight: set-font-weight("thin");
+
+      margin-bottom: 0.3rem;
+    }
+
+    .sub-title {
+      color: $font-color-primary;
+      font-family: $secondary-font;
+      font-size: set-font-size("sm");
+      font-weight: set-font-weight("thin");
+    }
+
+    .social-icons {
+      display: flex;
+      padding: 1rem;
+      color: $treebark-brown;
+
+      .social-icon {
+        @include rectangle($base-size * 2);
+        @include border-radius(5px);
+
+        border: 2px solid $treebark-brown;
+        margin: 0.5rem;
+        padding: .25rem;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        // change size of icon
+        font-size: set-font-size('md');
+        
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: $moss-green;
+          cursor: pointer;
+          border: 2px solid $moss-green;
+        }
+      }
+
+    }
+  }
+
+  .skills {
+    color: $font-color-secondary;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $primary-font;
+    font-size: get-font-size("sm");
+
+    .skill-badge {
+      border: 2px solid $fern-green;
+      margin: 0.25rem;
+      padding: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap');
+
+// colors
+$base-color: rgb(64, 77, 39);
+// $base-color: rgb(108, 162, 82);
+$mud-brown: adjust-color($base-color, $hue: -70deg, $lightness: -40%);
+$humous-brown: adjust-color($base-color, $hue: -60deg, $lightness: -5%);
+$treebark-brown: adjust-color($base-color, $hue: -60deg, $lightness: 5%);
+$fern-green: adjust-color($base-color, $hue: 15deg, $lightness: -10%);
+$moss-green: adjust-color($base-color, $hue: 15deg, $saturation: 35%, $lightness: 10%);
+$sky-white: adjust-color($base-color, $hue: -240deg, $lightness: 75%);//adjust-color($base-color, $hue: 20deg, $lightness: 60%);
+// $daisy-yellow: adjust-color($base-color, $hue: -25deg, $saturation: 50%, $lightness: 30%);//rgb(230, 198, 44);
+
+$colors: $mud-brown $humous-brown $treebark-brown $fern-green $moss-green $sky-white;
+@for $i from 1 through length($colors){
+    .box-#{$i}{
+        @include rectangle(50px);
+        background-color: nth($colors, $i);
+        margin: 0 .5rem;
+    }
+}
+
+
+// typefaces
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+$font-color-primary: $sky-white;
+$font-color-secondary: $moss-green;
+
+
+// sizes
+$base-size: 16px;
+$font-sizes: (
+    'lg': 2.2rem,
+    'md': 1.7rem,
+    'sm': 1.1rem
+);
+$font-weights: (
+    'thin': 300,
+    'regular': 400,
+    'bold': 600,
+);
+
+
+// Images
+$images: (
+    'profile-card-bg': './images/forest.jpg',
+    'headshot': './images/headshot.jpg'
+);
+
+
+// components
+// navbar
+$navbar-bg: $humous-brown;
+$navbar-link-color: $sky-white;
+$navbar-link-hover: $moss-green;
+$navbar-height: $base-size * 4;
+$navbar-width: auto;
+
+// profile card
+$profile-card-bg: $fern-green;
+$profile-card-shadow: darken($profile-card-bg, 10%);
+$profile-card-panel-bg: $mud-brown;
+$profile-card-highlight: $moss-green;
+$profile-card-icon-color: $treebark-brown;
+$profile-card-height: 70vh;
+$profile-card-width: 25vw;

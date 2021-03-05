@@ -1,0 +1,35 @@
+@import 'variables', 'functions', 'mixins';
+
+#navbar {
+  @include rectangle(50px, auto);
+
+  background-color: $navbar-bg;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  #nav-links {
+    display: flex;
+    list-style: none;
+
+    .nav-link {
+      border-bottom: 2px solid $navbar-bg;
+      color: $navbar-link-color;
+      font-family: $primary-font;
+      font-size: set-font-size('md');
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: set-font-weight('thin');
+      margin: 0.5rem 1rem;
+      padding: 0.5rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        border-bottom: 2px solid $navbar-link-hover;
+        cursor: pointer;
+        color: $navbar-link-hover;
+
+      }
+    }
+  }
+}
