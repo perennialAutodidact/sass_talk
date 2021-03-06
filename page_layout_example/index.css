@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
 .box-1 {
   height: 50px;
   width: 50px;
@@ -20,105 +16,21 @@
 .box-3 {
   height: 50px;
   width: 50px;
-  background-color: #5e3f30;
+  background-color: #806141;
   margin: 0 0.5rem;
 }
 
 .box-4 {
   height: 50px;
   width: 50px;
-  background-color: #1f2b16;
+  background-color: #2b3c1e;
   margin: 0 0.5rem;
 }
 
 .box-5 {
   height: 50px;
   width: 50px;
-  background-color: #498c1b;
-  margin: 0 0.5rem;
-}
-
-.box-6 {
-  height: 50px;
-  width: 50px;
-  background-color: #f7fafb;
-  margin: 0 0.5rem;
-}
-
-.box-1 {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  margin: 0 0.5rem;
-}
-
-.box-2 {
-  height: 50px;
-  width: 50px;
-  background-color: #3c291e;
-  margin: 0 0.5rem;
-}
-
-.box-3 {
-  height: 50px;
-  width: 50px;
-  background-color: #5e3f30;
-  margin: 0 0.5rem;
-}
-
-.box-4 {
-  height: 50px;
-  width: 50px;
-  background-color: #1f2b16;
-  margin: 0 0.5rem;
-}
-
-.box-5 {
-  height: 50px;
-  width: 50px;
-  background-color: #498c1b;
-  margin: 0 0.5rem;
-}
-
-.box-6 {
-  height: 50px;
-  width: 50px;
-  background-color: #f7fafb;
-  margin: 0 0.5rem;
-}
-
-.box-1 {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  margin: 0 0.5rem;
-}
-
-.box-2 {
-  height: 50px;
-  width: 50px;
-  background-color: #3c291e;
-  margin: 0 0.5rem;
-}
-
-.box-3 {
-  height: 50px;
-  width: 50px;
-  background-color: #5e3f30;
-  margin: 0 0.5rem;
-}
-
-.box-4 {
-  height: 50px;
-  width: 50px;
-  background-color: #1f2b16;
-  margin: 0 0.5rem;
-}
-
-.box-5 {
-  height: 50px;
-  width: 50px;
-  background-color: #498c1b;
+  background-color: #6bcc27;
   margin: 0 0.5rem;
 }
 
@@ -154,109 +66,25 @@
   transition: all 0.2s ease-in-out;
 }
 #navbar #nav-links .nav-link:hover {
-  border-bottom: 2px solid #498c1b;
+  border-bottom: 2px solid #6bcc27;
   cursor: pointer;
-  color: #498c1b;
-}
-
-.box-1 {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  margin: 0 0.5rem;
-}
-
-.box-2 {
-  height: 50px;
-  width: 50px;
-  background-color: #3c291e;
-  margin: 0 0.5rem;
-}
-
-.box-3 {
-  height: 50px;
-  width: 50px;
-  background-color: #5e3f30;
-  margin: 0 0.5rem;
-}
-
-.box-4 {
-  height: 50px;
-  width: 50px;
-  background-color: #1f2b16;
-  margin: 0 0.5rem;
-}
-
-.box-5 {
-  height: 50px;
-  width: 50px;
-  background-color: #498c1b;
-  margin: 0 0.5rem;
-}
-
-.box-6 {
-  height: 50px;
-  width: 50px;
-  background-color: #f7fafb;
-  margin: 0 0.5rem;
-}
-
-.box-1 {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  margin: 0 0.5rem;
-}
-
-.box-2 {
-  height: 50px;
-  width: 50px;
-  background-color: #3c291e;
-  margin: 0 0.5rem;
-}
-
-.box-3 {
-  height: 50px;
-  width: 50px;
-  background-color: #5e3f30;
-  margin: 0 0.5rem;
-}
-
-.box-4 {
-  height: 50px;
-  width: 50px;
-  background-color: #1f2b16;
-  margin: 0 0.5rem;
-}
-
-.box-5 {
-  height: 50px;
-  width: 50px;
-  background-color: #498c1b;
-  margin: 0 0.5rem;
-}
-
-.box-6 {
-  height: 50px;
-  width: 50px;
-  background-color: #f7fafb;
-  margin: 0 0.5rem;
+  color: #6bcc27;
 }
 
 .profile-card {
   height: 70vh;
-  width: 25vw;
+  width: 28%;
   border-radius: 10px;
   background-image: url("./images/forest.jpg");
   background-repeat: no-repeat;
   background-position: 60% 75%;
   background-size: cover;
-  box-shadow: 0 0 15px #070905;
+  padding: 1rem 0;
+  box-shadow: 0 0 15px #131a0d;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
 }
 .profile-card .panel {
   height: 100%;
@@ -274,14 +102,14 @@
   width: auto;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
-  border: 3px solid #498c1b;
+  border: 3px solid #6bcc27;
   margin: 1rem;
   padding: 0.75rem;
 }
 .profile-card .bio {
   border-radius: 5px;
-  background-color: rgba(31, 43, 22, 0.6);
-  margin: 0.5rem 0.25rem 1rem;
+  background-color: rgba(43, 60, 30, 0.8);
+  margin: 0.5rem 0.5rem 1rem;
   padding: 0.5rem 1rem 0.5rem;
   display: flex;
   flex-direction: column;
@@ -289,11 +117,11 @@
   font-family: "Open Sans", sans-serif;
 }
 .profile-card .bio .name {
-  color: #498c1b;
+  margin-bottom: 0.5rem;
+  color: #6bcc27;
   font-family: "Open Sans", sans-serif;
   font-size: 1.7rem;
   font-weight: 400;
-  margin-bottom: 0.5rem;
 }
 .profile-card .bio .name .first-letter {
   font-size: 2.2rem;
@@ -312,15 +140,15 @@
   font-weight: 300;
 }
 .profile-card .bio .social-icons {
-  display: flex;
   padding: 1rem;
-  color: #5e3f30;
+  display: flex;
+  color: #806141;
 }
 .profile-card .bio .social-icons .social-icon {
   height: 32px;
   width: 32px;
   border-radius: 5px;
-  border: 2px solid #5e3f30;
+  border: 2px solid #806141;
   margin: 0.5rem;
   padding: 0.25rem;
   display: flex;
@@ -330,20 +158,21 @@
   transition: all 0.2s ease-in-out;
 }
 .profile-card .bio .social-icons .social-icon:hover {
-  color: #498c1b;
   cursor: pointer;
-  border: 2px solid #498c1b;
+  border: 2px solid #6bcc27;
+  color: #6bcc27;
 }
 .profile-card .skills {
-  color: #498c1b;
+  margin: 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: #6bcc27;
   font-family: "Open Sans", sans-serif;
   font-size: get-font-size("sm");
 }
 .profile-card .skills .skill-badge {
-  border: 2px solid #1f2b16;
+  border: 2px solid #2b3c1e;
   margin: 0.25rem;
   padding: 0.5rem;
 }
@@ -367,7 +196,7 @@ body {
 }
 
 .container {
-  height: calc(100vh - 100px);
+  height: calc(100vh - $navbar-height);
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -1,4 +1,6 @@
-@import 'variables', 'functions', 'mixins';
+@use 'variables' as *;
+@use 'functions' as *;
+@use 'mixins' as *;
 
 #navbar {
   @include rectangle(50px, auto);

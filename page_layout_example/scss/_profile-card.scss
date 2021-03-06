@@ -1,4 +1,6 @@
-@import "variables", "mixins", "functions";
+@use "variables" as *;
+@use "mixins" as *;
+@use "functions" as *;
 
 .profile-card {
   @include rectangle($profile-card-height, $profile-card-width);
@@ -8,6 +10,7 @@
   background-repeat: no-repeat;
   background-position: 60% 75%;
   background-size: cover;
+  padding: 1rem 0;
 
   box-shadow: 0 0 15px $profile-card-shadow;
 
@@ -15,7 +18,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
 
   .panel {
     @include rectangle(100%, 96%);
@@ -38,15 +40,15 @@
     background-color: transparentize($profile-card-panel-bg, 0.5);
     border: 3px solid $profile-card-highlight;
     margin: 1rem;
-    padding: .75rem;
+    padding: 0.75rem;
   }
 
   .bio {
     @include border-radius(5px);
 
-    background-color: transparentize($fern-green, 0.4);
-    margin: 0.5rem 0.25rem 1rem;
-    padding: 0.5rem 1rem .5rem;
+    background-color: transparentize($fern-green, 0.2);
+    margin: 0.5rem 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem;
 
     display: flex;
     flex-direction: column;
@@ -55,12 +57,12 @@
     font-family: $primary-font;
 
     .name {
+      margin-bottom: 0.5rem;
+
       color: $font-color-secondary;
       font-family: $primary-font;
       font-size: set-font-size("md");
       font-weight: set-font-weight("regular");
-
-      margin-bottom: 0.5rem;
 
       .first-letter {
         font-size: set-font-size("lg");
@@ -84,8 +86,10 @@
     }
 
     .social-icons {
-      display: flex;
       padding: 1rem;
+
+      display: flex;
+
       color: $treebark-brown;
 
       .social-icon {
@@ -94,31 +98,34 @@
 
         border: 2px solid $treebark-brown;
         margin: 0.5rem;
-        padding: .25rem;
-        
+        padding: 0.25rem;
+
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         // change size of icon
-        font-size: set-font-size('md');
-        
+        font-size: set-font-size("md");
+
         transition: all 0.2s ease-in-out;
+
         &:hover {
-          color: $moss-green;
           cursor: pointer;
           border: 2px solid $moss-green;
+          color: $moss-green;
         }
       }
-
     }
   }
 
   .skills {
-    color: $font-color-secondary;
+    margin: 0.5rem 0;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    color: $font-color-secondary;
     font-family: $primary-font;
     font-size: get-font-size("sm");
 

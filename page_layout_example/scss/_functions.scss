@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as *;
 
 @function set-font-size($size){
     @return map-get($font-sizes, $size);
