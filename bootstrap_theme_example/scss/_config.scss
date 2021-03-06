@@ -1,0 +1,15 @@
+@use './custom-variables' as *;
+
+@use '../node_modules/bootstrap/scss/bootstrap' as * with (
+    $theme-colors: (
+        "primary":    $custom-primary,
+        "secondary":  $custom-secondary,
+        "success":    $custom-success,
+        "info":       $custom-info,
+        "warning":    $custom-warning,
+        "danger":     $custom-danger,
+        "light":      $custom-light,
+        "dark":       $custom-dark,
+        "darker":     darken($custom-dark, 20%) // add a custom color
+    )
+);

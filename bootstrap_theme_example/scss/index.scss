@@ -1,29 +1,12 @@
-// as * imports everything without needing a namespace
-
-// @use '../node_modules/bootstrap/scss/variables';
-// @use '../node_modules/bootstrap/scss/functions';
-// @use './custom_variables' as *;
+// @use ... as * removes the namespace
 
 @use './custom-variables' as *;
-
-@use '../node_modules/bootstrap/scss/bootstrap' as btstrp with (
-    $theme-colors: (
-        "primary":    $custom-primary,
-        "secondary":  $custom-secondary,
-        "success":    $custom-success,
-        "info":       $custom-info,
-        "warning":    $custom-warning,
-        "danger":     $custom-danger,
-        "light":      $custom-light,
-        "dark":       $custom-dark,
-        "darker":     darken($custom-dark, 20%) // add a custom color
-    )
-);
-
+@use './config' as *; // contains bootstrap customization
+@use '../node_modules/bootstrap/scss/bootstrap' as *;
 
 
 body {
-  background-color: map_get(btstrp.$theme-colors, "primary");
+  background-color: map_get($theme-colors, "info");
 
   // center items x & y
   display: flex;
@@ -32,7 +15,7 @@ body {
 }
 
 .container-fluid {
-  background-color: map-get(btstrp.$theme-colors, "darker");
+  background-color: map-get($theme-colors, "darker");
   padding: 5rem;
 
   display: flex;
