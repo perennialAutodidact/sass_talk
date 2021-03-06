@@ -17,7 +17,7 @@ $colors: $mud-brown $humous-brown $treebark-brown $fern-green $moss-green $sky-w
     .box-#{$i}{
         @include rectangle(50px);
         background-color: nth($colors, $i);
-        margin: 0 .5rem;
+        margin: 0rem .75rem;
     }
 }
 
@@ -55,7 +55,7 @@ $images: (
 $navbar-bg: $humous-brown;
 $navbar-link-color: $sky-white;
 $navbar-link-hover: $moss-green;
-$navbar-height: $base-size * 4;
+$navbar-height: $base-size * 8;
 $navbar-width: auto;
 
 // profile card
@@ -64,5 +64,5 @@ $profile-card-shadow: darken($profile-card-bg, 10%);
 $profile-card-panel-bg: $mud-brown;
 $profile-card-highlight: $moss-green;
 $profile-card-icon-color: $treebark-brown;
-$profile-card-height: 70vh;
-$profile-card-width: 28%;
+$profile-card-height: auto;
+$profile-card-width: 35%;

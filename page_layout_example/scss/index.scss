@@ -6,6 +6,7 @@
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 html {
@@ -17,12 +18,17 @@ body {
 }
 
 .swatches {
-    display: flex;
     padding: 1rem;
+    margin: 2rem;
+    
+    display: flex;
+    
 }
 
 .container {
     @include rectangle(calc(100vh - $navbar-height), 100%);
+    
+
     display: flex;
     flex-direction: column;
     align-items: center;

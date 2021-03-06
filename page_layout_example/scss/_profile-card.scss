@@ -8,9 +8,9 @@
 
   background-image: get-image("profile-card-bg");
   background-repeat: no-repeat;
-  background-position: 60% 75%;
+  background-position: 65% 55%;
   background-size: cover;
-  padding: 1rem 0;
+  padding: 1rem .5rem;
 
   box-shadow: 0 0 15px $profile-card-shadow;
 
@@ -34,21 +34,21 @@
   }
 
   .circle {
-    @include rectangle(150px, auto);
+    @include rectangle(200px);
     @include border-radius(50%);
 
     background-color: transparentize($profile-card-panel-bg, 0.5);
     border: 3px solid $profile-card-highlight;
     margin: 1rem;
-    padding: 0.75rem;
+    padding: 1rem;
   }
 
   .bio {
     @include border-radius(5px);
 
     background-color: transparentize($fern-green, 0.2);
-    margin: 0.5rem 0.5rem 1rem;
-    padding: 0.5rem 1rem 0.5rem;
+    margin: .5rem 0rem;
+    padding: 0.75rem 1rem;
 
     display: flex;
     flex-direction: column;
@@ -56,8 +56,10 @@
 
     font-family: $primary-font;
 
+    width: 85%;
+
     .name {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
 
       color: $font-color-secondary;
       font-family: $primary-font;
@@ -70,15 +72,18 @@
     }
 
     .main-title {
+          margin-bottom: 0.5rem;
+
       color: $font-color-primary;
       font-family: $secondary-font;
       font-size: set-font-size("md");
       font-weight: set-font-weight("thin");
 
-      margin-bottom: 0.3rem;
     }
 
     .sub-title {
+        margin-bottom: .5rem;
+
       color: $font-color-primary;
       font-family: $secondary-font;
       font-size: set-font-size("sm");
@@ -93,12 +98,12 @@
       color: $treebark-brown;
 
       .social-icon {
-        @include rectangle($base-size * 2);
+        @include rectangle($base-size * 2.5);
         @include border-radius(5px);
 
         border: 2px solid $treebark-brown;
-        margin: 0.5rem;
-        padding: 0.25rem;
+        margin: 0rem 1rem;
+        padding: 0.5rem;
 
         display: flex;
         align-items: center;
@@ -119,7 +124,7 @@
   }
 
   .skills {
-    margin: 0.5rem 0;
+    margin: 1rem;
 
     display: flex;
     flex-wrap: wrap;
