@@ -2,7 +2,7 @@
 .box-1 {
   height: 50px;
   width: 50px;
-  background-color: black;
+  background-color: #090605;
   margin: 0rem 0.75rem;
 }
 
@@ -30,7 +30,7 @@
 .box-5 {
   height: 50px;
   width: 50px;
-  background-color: #6bcc27;
+  background-color: #ace475;
   margin: 0rem 0.75rem;
 }
 
@@ -67,9 +67,9 @@
   transition: all 0.2s ease-in-out;
 }
 #navbar #nav-links .nav-link:hover {
-  border-bottom: 2px solid #6bcc27;
+  border-bottom: 2px solid #ace475;
   cursor: pointer;
-  color: #6bcc27;
+  color: #ace475;
 }
 
 .profile-card {
@@ -91,8 +91,8 @@
   height: 100%;
   width: 96%;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 0px -200px 700px inset black;
+  background-color: rgba(9, 6, 5, 0.4);
+  box-shadow: 0px -200px 700px inset #090605;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,8 +102,8 @@
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 3px solid #6bcc27;
+  background-color: rgba(9, 6, 5, 0.5);
+  border: 3px solid #ace475;
   margin: 1rem;
   padding: 1rem;
 }
@@ -116,14 +116,15 @@
   flex-direction: column;
   align-items: center;
   font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
   width: 85%;
 }
 .profile-card .bio .name {
   margin-bottom: 1rem;
-  color: #6bcc27;
+  color: #ace475;
   font-family: "Open Sans", sans-serif;
   font-size: 1.7rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 .profile-card .bio .name .first-letter {
   font-size: 2.2rem;
@@ -133,17 +134,17 @@
   color: #f7fafb;
   font-family: "Raleway", sans-serif;
   font-size: 1.7rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .profile-card .bio .sub-title {
   margin-bottom: 0.5rem;
   color: #f7fafb;
   font-family: "Raleway", sans-serif;
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .profile-card .bio .social-icons {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   color: #806141;
 }
@@ -152,32 +153,33 @@
   width: 40px;
   border-radius: 5px;
   border: 2px solid #806141;
-  margin: 0rem 1rem;
-  padding: 0.5rem;
+  margin: 0rem 1.5rem;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   transition: all 0.2s ease-in-out;
 }
 .profile-card .bio .social-icons .social-icon:hover {
   cursor: pointer;
-  border: 2px solid #6bcc27;
-  color: #6bcc27;
+  border: 2px solid #ace475;
+  color: #ace475;
 }
 .profile-card .skills {
-  margin: 1rem;
+  margin: 1rem 1rem 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: #6bcc27;
+  color: #ace475;
   font-family: "Open Sans", sans-serif;
   font-size: get-font-size("sm");
+  width: 85%;
 }
 .profile-card .skills .skill-badge {
   border: 2px solid #2b3c1e;
-  margin: 0.25rem;
-  padding: 0.5rem;
+  margin: 0.3rem;
+  padding: 0.75rem;
 }
 
 * {

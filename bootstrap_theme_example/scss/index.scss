@@ -15,7 +15,7 @@ body {
 }
 
 .container-fluid {
-  background-color: map-get($theme-colors, "darker");
+  background-color: adjust-color($dark, $lightness: -10%);
   padding: 5rem;
 
   display: flex;

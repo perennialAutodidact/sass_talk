@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: 65% 55%;
   background-size: cover;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
 
   box-shadow: 0 0 15px $profile-card-shadow;
 
@@ -47,7 +47,7 @@
     @include border-radius(5px);
 
     background-color: transparentize($fern-green, 0.2);
-    margin: .5rem 0rem;
+    margin: 0.5rem 0rem;
     padding: 0.75rem 1rem;
 
     display: flex;
@@ -55,6 +55,7 @@
     align-items: center;
 
     font-family: $primary-font;
+    letter-spacing: 2px;
 
     width: 85%;
 
@@ -64,7 +65,7 @@
       color: $font-color-secondary;
       font-family: $primary-font;
       font-size: set-font-size("md");
-      font-weight: set-font-weight("regular");
+      font-weight: set-font-weight("bold");
 
       .first-letter {
         font-size: set-font-size("lg");
@@ -72,26 +73,25 @@
     }
 
     .main-title {
-          margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
 
       color: $font-color-primary;
       font-family: $secondary-font;
       font-size: set-font-size("md");
-      font-weight: set-font-weight("thin");
-
+      font-weight: set-font-weight("regular");
     }
 
     .sub-title {
-        margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
 
       color: $font-color-primary;
       font-family: $secondary-font;
       font-size: set-font-size("sm");
-      font-weight: set-font-weight("thin");
+      font-weight: set-font-weight("regular");
     }
 
     .social-icons {
-      padding: 1rem;
+      padding: 2rem;
 
       display: flex;
 
@@ -102,15 +102,14 @@
         @include border-radius(5px);
 
         border: 2px solid $treebark-brown;
-        margin: 0rem 1rem;
-        padding: 0.5rem;
-
+        margin: 0rem 1.5rem;
+        padding: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
 
         // change size of icon
-        font-size: set-font-size("md");
+        font-size: set-font-size("lg");
 
         transition: all 0.2s ease-in-out;
 
@@ -124,7 +123,7 @@
   }
 
   .skills {
-    margin: 1rem;
+    margin: 1rem 1rem 2rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -134,10 +133,12 @@
     font-family: $primary-font;
     font-size: get-font-size("sm");
 
+    width: 85%;
+
     .skill-badge {
       border: 2px solid $fern-green;
-      margin: 0.25rem;
-      padding: 0.5rem;
+      margin: 0.3rem;
+      padding: 0.75rem;
     }
   }
 }

@@ -10,6 +10,12 @@
         "danger":     $custom-danger,
         "light":      $custom-light,
         "dark":       $custom-dark,
-        "darker":     darken($custom-dark, 20%) // add a custom color
-    )
+        
+        // custom colors
+        "darker":     adjust-color($custom-dark, $lightness: -10%), 
+        "custom":     $custom-color,
+    ),
+
+    // $enable-rounded: false,  // remove border radius
+    // $btn-border-radius-lg: 50%, // custom border radius
 );

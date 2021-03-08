@@ -4,11 +4,11 @@
 // colors
 $base-color: rgb(64, 77, 39);
 // $base-color: rgb(45, 155, 206);
-$mud-brown: adjust-color($base-color, $hue: -70deg, $lightness: -40%);
+$mud-brown: adjust-color($base-color, $hue: -60deg, $lightness: -20%);
 $humous-brown: adjust-color($base-color, $hue: -60deg, $lightness: -5%);
 $treebark-brown: adjust-color($base-color, $hue: -50deg, $lightness: 15%);
 $fern-green: adjust-color($base-color, $hue: 15deg, $lightness: -5%);
-$moss-green: adjust-color($base-color, $hue: 15deg, $saturation: 35%, $lightness: 25%);
+$moss-green: adjust-color($base-color, $hue: 10deg, $saturation: 35%, $lightness: 45%);
 $sky-white: adjust-color($base-color, $hue: -240deg, $lightness: 75%);//adjust-color($base-color, $hue: 20deg, $lightness: 60%);
 // $daisy-yellow: adjust-color($base-color, $hue: -25deg, $saturation: 50%, $lightness: 30%);//rgb(230, 198, 44);
 
