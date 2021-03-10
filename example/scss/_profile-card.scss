@@ -1,29 +1,29 @@
-@use "variables" as *;
+@use "custom-variables" as *;
 @use "mixins" as *;
 @use "functions" as *;
 
 .profile-card {
   @include rectangle($profile-card-height, $profile-card-width);
   @include border-radius(10px);
-
+  
   background-image: get-image("profile-card-bg");
   background-repeat: no-repeat;
   background-position: 65% 55%;
   background-size: cover;
   padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
 
   box-shadow: 0 0 15px $profile-card-shadow;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   .panel {
     @include rectangle(100%, 96%);
     @include border-radius(5px);
 
-    background-color: adjust-color($profile-card-panel-bg, $alpha: 60%);
+    background-color: adjust-color($profile-card-panel-bg, $alpha: -0.8);
     box-shadow: 0px -200px 700px inset $profile-card-panel-bg;
 
     display: flex;
@@ -37,7 +37,7 @@
     @include rectangle(200px);
     @include border-radius(50%);
 
-    background-color: adjust-color($profile-card-panel-bg, $alpha: 50%);
+    background-color: adjust-color($profile-card-panel-bg, $alpha: -0.2);
     border: 3px solid $profile-card-highlight;
     margin: 1rem;
     padding: 1rem;
@@ -46,7 +46,7 @@
   .bio {
     @include border-radius(5px);
 
-    background-color: adjust-color($fern-green, $alpha: 20%);
+    background-color: adjust-color($profile-card-bio-bg, $alpha: -0.2);
     margin: 0.5rem 0rem;
     padding: 0.75rem 1rem;
 
@@ -64,11 +64,11 @@
 
       color: $font-color-secondary;
       font-family: $primary-font;
-      font-size: set-font-size("md");
-      font-weight: set-font-weight("bold");
+      font-size: get-font-size("md");
+      font-weight: get-font-weight("bold");
 
       .first-letter {
-        font-size: set-font-size("lg");
+        font-size: get-font-size("lg");
       }
     }
 
@@ -77,8 +77,8 @@
 
       color: $font-color-primary;
       font-family: $secondary-font;
-      font-size: set-font-size("md");
-      font-weight: set-font-weight("regular");
+      font-size: get-font-size("md");
+      font-weight: get-font-weight("regular");
     }
 
     .sub-title {
@@ -86,8 +86,8 @@
 
       color: $font-color-primary;
       font-family: $secondary-font;
-      font-size: set-font-size("sm");
-      font-weight: set-font-weight("regular");
+      font-size: get-font-size("sm");
+      font-weight: get-font-weight("regular");
     }
 
     .social-icons {
@@ -95,13 +95,13 @@
 
       display: flex;
 
-      color: $treebark-brown;
+      color: $profile-card-social-icon-color;
 
       .social-icon {
         @include rectangle($base-size * 2.5);
         @include border-radius(5px);
 
-        border: 2px solid $treebark-brown;
+        border: 2px solid $profile-card-social-icon-color;
         margin: 0rem 1.5rem;
         padding: 1.5rem;
         display: flex;
@@ -109,18 +109,18 @@
         justify-content: center;
 
         // change size of icon
-        font-size: set-font-size("lg");
+        font-size: get-font-size("lg");
 
         transition: all 0.2s ease-in-out;
 
         &:hover {
           cursor: pointer;
-          border: 2px solid $moss-green;
-          color: $moss-green;
+          border: 2px solid $profile-card-social-icon-color-hover;
+          color: $profile-card-social-icon-color-hover;
         }
       }
     }
-  }
+  } // end bio
 
   .skills {
     margin: 1rem 1rem 2rem;
@@ -136,9 +136,9 @@
     width: 85%;
 
     .skill-badge {
-      border: 2px solid $fern-green;
+      border: 2px solid $profile-card-skill-badge-color;
       margin: 0.3rem;
       padding: 0.75rem;
-    }
-  }
-}
+    } 
+  } // end skills
+} // end profile card

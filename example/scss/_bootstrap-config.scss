@@ -1,0 +1,25 @@
+@use './custom-variables' as *;
+
+// @use imports into this file only.
+
+// @forward imports into this file and passes
+// local module data into other modules when @use is used
+@forward '../node_modules/bootstrap/scss/bootstrap' with (
+    $theme-colors: (
+        "primary": $custom-primary,
+        "secondary": $custom-secondary,
+        "success": $custom-success,
+        "info": $custom-info,
+        "warning": $custom-warning,
+        "danger": $custom-danger,
+        "light": $custom-light,
+        "dark": $custom-dark,
+
+        "custom": $custom-color,
+    ),
+
+    $font-family-sans-serif: $primary-font, // set the base font
+
+    // customize navbar
+    $navbar-padding-y: 1.5rem
+);

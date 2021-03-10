@@ -1,0 +1,22 @@
+// 1 argument makes a square, 2 arguments makes a rectangle
+@mixin rectangle($height, $width: $height) {
+  height: $height;
+  width: $width;
+}
+
+// 1 argument sets all, 2 arguments sets top/bottom, 4 arguments sets TRDL
+@mixin border-radius(
+  $top-left,
+  $bottom-left: null,
+  $top-right: $top-left,
+  $bottom-right: $bottom-left
+) {
+  @if $bottom-left {
+    border-top-left-radius: $top-left;
+    border-top-right-radius: $top-right;
+    border-bottom-left-radius: $bottom-left;
+    border-bottom-right-radius: $bottom-right;
+  } @else {
+    border-radius: $top-left;
+  }
+}
