@@ -1,11 +1,14 @@
 @use "custom-variables" as *;
-@use "mixins" as *;
-@use "functions" as *;
+@use "custom-mixins" as *;
+@use "custom-functions" as *;
 
 .profile-card {
   @include rectangle($profile-card-height, $profile-card-width);
   @include border-radius(10px);
-  
+
+  @include flex(column, center);
+    
+//   background-color: $profile-card-bg;
   background-image: get-image("profile-card-bg");
   background-repeat: no-repeat;
   background-position: 65% 55%;
@@ -15,20 +18,13 @@
 
   box-shadow: 0 0 15px $profile-card-shadow;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   .panel {
     @include rectangle(100%, 96%);
     @include border-radius(5px);
+    @include flex(column, center);
 
     background-color: adjust-color($profile-card-panel-bg, $alpha: -0.8);
     box-shadow: 0px -200px 700px inset $profile-card-panel-bg;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     letter-spacing: 2px;
   }
@@ -45,17 +41,13 @@
 
   .bio {
     @include border-radius(5px);
+    @include flex(column, $align-items: center);
 
     background-color: adjust-color($profile-card-bio-bg, $alpha: -0.2);
     margin: 0.5rem 0rem;
     padding: 0.75rem 1rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     font-family: $primary-font;
-    letter-spacing: 2px;
 
     width: 85%;
 
@@ -91,43 +83,44 @@
     }
 
     .social-icons {
-      padding: 2rem;
+        @include flex();
 
-      display: flex;
+        padding: 2rem;
 
       color: $profile-card-social-icon-color;
 
       .social-icon {
         @include rectangle($base-size * 2.5);
         @include border-radius(5px);
+        @include flex(column, center, center);
+
+        @extend %button-hover;
 
         border: 2px solid $profile-card-social-icon-color;
         margin: 0rem 1.5rem;
         padding: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
         // change size of icon
         font-size: get-font-size("lg");
 
         transition: all 0.2s ease-in-out;
 
-        &:hover {
-          cursor: pointer;
-          border: 2px solid $profile-card-social-icon-color-hover;
-          color: $profile-card-social-icon-color-hover;
-        }
+        // &:hover {
+        //   cursor: pointer;
+        //   border: 2px solid $profile-card-social-icon-color-hover;
+        //   color: $profile-card-social-icon-color-hover;
+        // }
       }
     }
   } // end bio
 
   .skills {
-    margin: 1rem 1rem 2rem;
+    // margin: 1rem 1rem 2rem;
+    margin: 1rem;
 
-    display: flex;
+
+    @include flex($justify-content: center);
     flex-wrap: wrap;
-    justify-content: center;
 
     color: $font-color-secondary;
     font-family: $primary-font;
@@ -136,9 +129,10 @@
     width: 85%;
 
     .skill-badge {
-      border: 2px solid $profile-card-skill-badge-color;
+        @extend %button-hover;
+      border: 2px solid $profile-card-highlight;
       margin: 0.3rem;
       padding: 0.75rem;
-    } 
+    }
   } // end skills
-} // end profile card
+} // end profile 

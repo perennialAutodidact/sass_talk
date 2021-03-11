@@ -20,3 +20,14 @@
     border-radius: $top-left;
   }
 }
+
+@mixin flex(
+  $dir: "row",
+  $align-items: "flex-start",
+  $justify-content: "flex-start"
+) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
