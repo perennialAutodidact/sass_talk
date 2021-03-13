@@ -55,16 +55,28 @@ body {
     }
 }
 
+
+
+
+
+// %large-caps {
+//     text-transform: uppercase;
+//     font-size: 3rem;
+// }
+
 // .swatch {
 //     @include rectangle(200px);
 //     @include border-radius(50%);
 //     // @include flex($justify-content: center);
 //     @include flex(column, center, center);
 
+//     @extend %large-caps;
+
 //     background-color: bootstrap.$primary;
 //     margin: 2rem auto;
 
 //     &:hover {
 //         background-color: bootstrap.$info;
+//         cursor: pointer;
 //     }
 // }

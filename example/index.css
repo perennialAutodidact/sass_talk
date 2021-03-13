@@ -1,14 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
-.profile-card .bio .social-icons .social-icon, .profile-card .skills .skill-badge {
-  transition: all 0.2s ease-in-out;
-}
-.profile-card .bio .social-icons .social-icon:hover, .profile-card .skills .skill-badge:hover {
-  cursor: pointer;
-  color: #8f3240;
-  border: 2px solid #8f3240;
-}
-
 .nav-link {
   letter-spacing: 0.15rem;
   text-transform: uppercase;
@@ -110,6 +101,11 @@
   padding: 1.5rem;
   font-size: 35.2px;
   transition: all 0.2s ease-in-out;
+}
+.profile-card .bio .social-icons .social-icon:hover {
+  cursor: pointer;
+  border: 2px solid #78be1e;
+  color: #78be1e;
 }
 .profile-card .skills {
   margin: 1rem;

@@ -64,16 +64,6 @@ $font-color-primary: $custom-light;
 $font-color-secondary: $custom-success;
 
 
-%button-hover{
-    transition: all .2s ease-in-out;
-    &:hover{
-        cursor: pointer;
-        color: $custom-danger;
-        border: 2px solid $custom-danger;
-    }
-}
-
-
 // sizes
 $base-size: 16px;
 $font-sizes: (
@@ -88,10 +78,6 @@ $font-weights: (
   "bold": 600,
 );
 
-// Images
-$images: (
-  "profile-card-bg": "./images/forest.jpg",
-);
 
 // profile card
 $profile-card-bg: $custom-primary;
