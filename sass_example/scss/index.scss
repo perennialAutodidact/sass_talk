@@ -63,6 +63,7 @@ body {
         background-color: teal;
 
         &:hover {
+            @extend %pointer;
             background-color: turquoise;
         }
     }

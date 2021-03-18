@@ -97,7 +97,7 @@
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          @extend %cursor-pointer;
+          @extend %pointer;
 
           border: 2px solid $social-icon-color-hover;
           color: $social-icon-color-hover;
