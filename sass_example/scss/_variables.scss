@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
 
-$secondary-font: "Open Sans", sans-serif;
-$primary-font: "Raleway", sans-serif;
 
 // sizes
 $base-size: 16px;
@@ -59,6 +57,8 @@ $custom-colors: $custom-primary,
                 $custom-dark,
                 $custom-light;
 
+$secondary-font: "Open Sans", sans-serif;
+$primary-font: "Raleway", sans-serif;
 
 $font-color-primary: $custom-light;
 $font-color-secondary: $custom-success;
@@ -74,3 +74,9 @@ $bio-bg: $custom-secondary;
 $social-icon-color: $custom-info;
 $social-icon-color-hover: $custom-success;
 $skill-badge-color: $custom-secondary;
+
+
+// variables for outer/inner box example
+$outer-box-bg: darkslategray;
+$inner-box-bg: teal;
+$inner-box-hover: turquoise;

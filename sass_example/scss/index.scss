@@ -25,7 +25,8 @@
 
 
 body {
-    background-color: adjust-color(grey, $lightness: -20%);
+    background-color: slategray;
+    // background-color: adjust-color($custom-light, $lightness: -20%);
 }
 
 .swatches {
@@ -52,7 +53,7 @@ body {
     @include rectangle(200px);
     @include border-radius(10px);
     @include flex(column, center, center);
-    background-color: slategray;
+    background-color: $outer-box-bg;
 
     margin: 2rem auto;
 
@@ -60,11 +61,11 @@ body {
         @include rectangle(100px);
         @include border-radius(50%, 10%, 10%, 50%);
 
-        background-color: teal;
+        background-color: $inner-box-bg;
 
         &:hover {
             @extend %pointer;
-            background-color: turquoise;
+            background-color: $inner-box-hover;
         }
     }
 }

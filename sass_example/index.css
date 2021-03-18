@@ -10055,7 +10055,7 @@ h3 {
   }
 }
 body {
-  background-color: #4d4d4d;
+  background-color: slategray;
 }
 
 .swatches {
@@ -10110,7 +10110,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: slategray;
+  background-color: darkslategray;
   margin: 2rem auto;
 }
 .outer .inner {
