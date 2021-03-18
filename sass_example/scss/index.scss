@@ -42,7 +42,6 @@ body {
 
     .swatch {
         @include rectangle(5rem);
-        @include flex(col, center, center);
         @include border-radius(50%, 5%, 5%, 50%);
 
         margin: .5rem;
