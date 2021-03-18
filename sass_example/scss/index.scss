@@ -5,10 +5,13 @@
 
 // with () will allow custom variables to be passed to override defaults
 @use '../node_modules/bootstrap/scss/bootstrap' with (
+    // change default font
     $font-family-sans-serif: $primary-font,
 
+    // increase navbar padding
     $navbar-padding-y: 2rem,
 
+    // override default theme colors
     $theme-colors: (
         "primary":    $custom-primary,
         "secondary":  $custom-secondary, 
@@ -17,7 +20,10 @@
         "warning":    $custom-warning,
         "danger":     $custom-danger,
         "light":      $custom-light,
-        "dark":       $custom-dark
+        "dark":       $custom-dark,
+
+        // add custom color class to Bootstrap
+        "custom":     $custom-color,
     ),
 
 );
@@ -32,17 +38,21 @@ body {
 .swatches {
     @include flex($justify-content: center);
     
+    padding: 1.5rem;
+
     .swatch {
         @include rectangle(5rem);
         @include flex(col, center, center);
-        @include border-radius(50%, 10%, 10%, 50%);
-                
-        margin: 1rem;
+        @include border-radius(50%, 5%, 5%, 50%);
+
+        margin: .5rem;
     }
     
     // color the swatches using the list of theme-colors
     @for $i from 1 through length($custom-colors){
+        // target each subsequent swatch number
         .swatch-#{$i} {
+            // nth($list, $index) - retrieves the item at the index
             background-color: nth($custom-colors, $i);
         }
     };

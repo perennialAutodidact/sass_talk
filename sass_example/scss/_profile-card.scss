@@ -2,6 +2,12 @@
 @use 'variables' as *;
 @use 'functions' as *;
 
+%title {
+  margin-bottom: 0.5rem;
+  color: $font-color-secondary;
+  font-weight: get-font-weight("regular");
+}
+
 .profile-card {
   @include rectangle($profile-card-height, $profile-card-width);
   @include border-radius(0.75rem);
@@ -13,7 +19,7 @@
   background-size: cover;
 
   padding: 1rem 0.5rem;
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
 
   box-shadow: 0 0 15px $profile-card-shadow;
 
@@ -51,7 +57,7 @@
     .name {
       margin-bottom: 1rem;
 
-      color: $font-color-secondary;
+      color: $font-color-primary;
       font-size: get-font-size("md");
       font-weight: get-font-weight("bold");
 
@@ -60,20 +66,15 @@
       }
     }
 
-    .main-title {
-      margin-bottom: 0.5rem;
+    .title {
+      @extend %title;
+      &-main {
+        font-size: get-font-size("md");
+      }
 
-      color: $font-color-primary;
-      font-size: get-font-size("md");
-      font-weight: get-font-weight("regular");
-    }
-
-    .sub-title {
-      margin-bottom: 0.5rem;
-
-      color: $font-color-primary;
-      font-size: get-font-size("sm");
-      font-weight: get-font-weight("regular");
+      &-sub {
+        font-size: get-font-size("sm");
+      }
     }
 
     .social-icons {
@@ -113,8 +114,8 @@
     margin: 1rem;
 
     .skill-badge {
-      border: 2px solid $profile-card-highlight;
-      color: $font-color-secondary;
+      border: 2px solid $skill-badge-color;
+      color: $skill-badge-color;
       margin: 0.3rem;
       padding: 0.75rem;
 

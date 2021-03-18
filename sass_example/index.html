@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-<!-- 
+
     <nav class="navbar navbar-expand navbar-dark bg-primary">
       <div class="container-fluid">
         <h1 class="navbar-brand">Styled with Sass</h1>
@@ -34,15 +34,15 @@
         </ul>
       </div>
     </nav>
-     -->
+    
     <!-- END NAVBAR -->
 
     <!-- BASIC DIV EXAMPLE -->
-    
+<!--     
     <div class="outer">
         <div class="inner"></div>
     </div>
-   
+    -->
 
 
     <div class="swatches">
@@ -59,11 +59,9 @@
 
     <!-- SWATCHES AND PROFILE CARD -->
     
-    <div class="container" id="main-content">
-
       <div class="profile-card">
         <div class="panel">
-          <img src="./images/headshot.jpg" alt="keegan" class="circle" />
+          <img src="" class="circle" />
 
           <div class="bio">
             <h3 class="name">
@@ -71,8 +69,8 @@
               <span class="first-letter">G</span>ood
             </h3>
 
-            <h4 class="main-title">Full Stack Developer</h4>
-            <h6 class="sub-title">Autodidact</h6>
+            <h4 class="title title-main">Full Stack Developer</h4>
+            <h6 class="title title-sub">Autodidact</h6>
 
             <div class="social-icons">
               <div class="social-icon">
@@ -88,23 +86,22 @@
           </div>
 
           <div class="skills">
-            <div class="skill-badge">PYTHON</div>
-            <div class="skill-badge">DJANGO</div>
-            <div class="skill-badge">JAVASCRIPT</div>
-            <div class="skill-badge">REACT</div>
-            <div class="skill-badge">HTML5</div>
-            <div class="skill-badge">CSS3</div>
-            <div class="skill-badge">SASS</div>
+            <div class="skill-badge text-center">PYTHON</div>
+            <div class="skill-badge text-center">DJANGO</div>
+            <div class="skill-badge text-center">JAVASCRIPT</div>
+            <div class="skill-badge text-center">REACT</div>
+            <div class="skill-badge text-center">HTML5</div>
+            <div class="skill-badge text-center">CSS3</div>
+            <div class="skill-badge text-center">SASS</div>
           </div>
         </div>
       </div>
 
-    </div>
     
     <!-- END SWATCHES AND PROFILE CARD -->
 
     <!-- BOOTSTRAP COMPONENTS -->
-<!--     
+    
     <div class="container text-center">
       <button type="button" class="btn btn-primary m-2">Primary</button>
       <button type="button" class="btn btn-secondary m-2">Secondary</button>
@@ -114,95 +111,86 @@
       <button type="button" class="btn btn-info m-2">Info</button>
       <button type="button" class="btn btn-light m-2">Light</button>
       <button type="button" class="btn btn-dark m-2">Dark</button>
+      <button type="button" class="btn btn-custom m-2">Custom</button>
 
       <div class="progress m-2">
         <div
           class="progress-bar progress-bar-striped"
-          role="progressbar"
-          style="width: 10%"
-          aria-valuenow="10"
-          aria-valuemin="0"
-          aria-valuemax="100"
+          style="width: 16%"
         ></div>
       </div>
       <div class="progress m-2">
         <div
           class="progress-bar progress-bar-striped bg-success"
-          role="progressbar"
-          style="width: 25%"
-          aria-valuenow="25"
-          aria-valuemin="0"
-          aria-valuemax="100"
+          style="width: 32%"
         ></div>
       </div>
       <div class="progress m-2">
         <div
           class="progress-bar progress-bar-striped bg-info"
-          role="progressbar"
-          style="width: 50%"
-          aria-valuenow="50"
-          aria-valuemin="0"
-          aria-valuemax="100"
+          style="width: 48%"
         ></div>
       </div>
       <div class="progress m-2">
         <div
           class="progress-bar progress-bar-striped bg-warning"
-          role="progressbar"
-          style="width: 75%"
-          aria-valuenow="75"
-          aria-valuemin="0"
-          aria-valuemax="100"
+          style="width: 64%"
         ></div>
       </div>
       <div class="progress m-2">
         <div
           class="progress-bar progress-bar-striped bg-danger"
-          role="progressbar"
+          style="width: 80%"
+        ></div>
+      </div>
+      <div class="progress m-2">
+        <div
+          class="progress-bar progress-bar-striped bg-custom"
           style="width: 100%"
-          aria-valuenow="100"
-          aria-valuemin="0"
-          aria-valuemax="100"
         ></div>
       </div>
 
-      <span class="badge rounded-pill bg-primary m-2 text-light">Primary</span>
-      <span class="badge rounded-pill bg-secondary m-2 text-light"
+      <span class="badge rounded-pill bg-primary m-2 p-2 text-light">Primary</span>
+      <span class="badge rounded-pill bg-secondary m-2 p-2 text-light"
         >Secondary</span
       >
-      <span class="badge rounded-pill bg-success m-2 text-light">Success</span>
-      <span class="badge rounded-pill bg-danger m-2 text-light">Danger</span>
-      <span class="badge rounded-pill bg-warning text-light m-2">Warning</span>
-      <span class="badge rounded-pill bg-info text-light m-2">Info</span>
-      <span class="badge rounded-pill bg-light text-dark m-2">Light</span>
-      <span class="badge rounded-pill bg-dark m-2 text-light">Dark</span>
+      <span class="badge rounded-pill bg-success m-2 p-2 text-light">Success</span>
+      <span class="badge rounded-pill bg-danger m-2 p-2 text-light">Danger</span>
+      <span class="badge rounded-pill bg-warning text-light m-2 p-2">Warning</span>
+      <span class="badge rounded-pill bg-info text-light m-2 p-2">Info</span>
+      <span class="badge rounded-pill bg-light text-dark m-2 p-2">Light</span>
+      <span class="badge rounded-pill bg-dark m-2 p-2 text-light">Dark</span>
+      <span class="badge rounded-pill bg-custom m-2 p-2 text-light">Custom</span>
 
-      <div class="alert alert-primary" role="alert">
-        A simple primary alert—check it out!
+      <div class="alert alert-primary">
+        Primary Alert
       </div>
-      <div class="alert alert-secondary" role="alert">
-        A simple secondary alert—check it out!
+      <div class="alert alert-secondary">
+        Secondary Alert
       </div>
-      <div class="alert alert-success" role="alert">
-        A simple success alert—check it out!
+      <div class="alert alert-success">
+        Success Alert
       </div>
-      <div class="alert alert-danger" role="alert">
-        A simple danger alert—check it out!
+      <div class="alert alert-danger">
+        Danger Alert
       </div>
-      <div class="alert alert-warning" role="alert">
-        A simple warning alert—check it out!
+      <div class="alert alert-warning">
+        Warning Alert
       </div>
-      <div class="alert alert-info" role="alert">
-        A simple info alert—check it out!
+      <div class="alert alert-info">
+          Info Alert
       </div>
-      <div class="alert alert-light" role="alert">
-        A simple light alert—check it out!
+      <div class="alert alert-light">
+        Light Alert
       </div>
-      <div class="alert alert-dark" role="alert">
-        A simple dark alert—check it out!
+      <div class="alert alert-dark">
+        Dark Alert
+      </div>
+      <div class="alert alert-custom">
+        Custom Alert
       </div>
     </div>
-  -->
+ 
     <!-- END BOOTSTRAP COMPONENTS -->
   </body>
 </html>
