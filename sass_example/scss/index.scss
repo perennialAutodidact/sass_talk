@@ -25,7 +25,7 @@
 
 
 body {
-    background-color: adjust-color(bootstrap.$light, $lightness: -20%);
+    background-color: adjust-color(grey, $lightness: -20%);
 }
 
 .swatches {
@@ -35,9 +35,7 @@ body {
         @include rectangle(5rem);
         @include flex(col, center, center);
         @include border-radius(50%, 10%);
-        
-        background-color: $swatch-bg;
-        
+                
         margin: 1rem;
     }
     
