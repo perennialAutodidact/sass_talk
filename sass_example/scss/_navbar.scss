@@ -1,10 +1,9 @@
-@use 'custom-functions' as *;
+@use 'functions' as *;
 
 .nav-link {
-    letter-spacing: .15rem;
+    letter-spacing: .25rem;
     text-transform: uppercase;
 
     font-size: get-font-size('md');
     font-weight: get-font-weight('thin');
 }
-

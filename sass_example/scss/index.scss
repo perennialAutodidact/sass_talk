@@ -1,0 +1,71 @@
+@use 'variables' as *; // @use creates a namespace | as * imports everything
+@use 'mixins' as *;
+@use 'navbar';
+@use 'profile-card';
+
+// with () will allow custom variables to be passed to override defaults
+@use '../node_modules/bootstrap/scss/bootstrap' with (
+    $font-family-sans-serif: $primary-font,
+
+    $navbar-padding-y: 2rem,
+
+    $theme-colors: (
+        "primary":    $custom-primary,
+        "secondary":  $custom-secondary, 
+        "success":    $custom-success,
+        "info":       $custom-info,
+        "warning":    $custom-warning,
+        "danger":     $custom-danger,
+        "light":      $custom-light,
+        "dark":       $custom-dark
+    ),
+
+);
+
+
+
+body {
+    background-color: adjust-color(bootstrap.$light, $lightness: -20%);
+}
+
+.swatches {
+    @include flex($justify-content: center);
+    
+    .swatch {
+        @include rectangle(5rem);
+        @include flex(col, center, center);
+        @include border-radius(50%, 10%);
+        
+        background-color: $swatch-bg;
+        
+        margin: 1rem;
+    }
+    
+    // color the swatches using the list of theme-colors
+    @for $i from 1 through length($custom-colors){
+        .swatch-#{$i} {
+            background-color: nth($custom-colors, $i);
+        }
+    };
+}
+
+
+.outer {
+    @include rectangle(200px);
+    @include border-radius(10px);
+    @include flex(column, center, center);
+    background-color: slategray;
+
+    margin: 2rem auto;
+
+    .inner {
+        @include rectangle(100px);
+        @include border-radius(50%, 10%, 10%, 50%);
+
+        background-color: teal;
+
+        &:hover {
+            background-color: turquoise;
+        }
+    }
+}

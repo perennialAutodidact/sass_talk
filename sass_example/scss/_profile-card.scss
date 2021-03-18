@@ -1,60 +1,57 @@
-@use "custom-variables" as *;
-@use "custom-mixins" as *;
-@use "custom-functions" as *;
+@use 'mixins' as *;
+@use 'variables' as *;
+@use 'functions' as *;
 
 .profile-card {
   @include rectangle($profile-card-height, $profile-card-width);
-  @include border-radius(10px);
-
+  @include border-radius(0.75rem);
   @include flex(column, center);
 
   background-image: url("./images/forest.jpg");
   background-repeat: no-repeat;
   background-position: 65% 55%;
   background-size: cover;
+
   padding: 1rem 0.5rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 
   box-shadow: 0 0 15px $profile-card-shadow;
 
   .panel {
     @include rectangle(100%, 96%);
-    @include border-radius(5px);
+    @include border-radius(0.25rem);
     @include flex(column, center);
 
-    background-color: adjust-color($profile-card-panel-bg, $alpha: -0.8);
-    box-shadow: 0px -200px 700px inset $profile-card-panel-bg;
+    background-color: adjust-color($panel-bg, $alpha: -0.8);
+    box-shadow: 0px -200px 700px inset $panel-bg;
 
     letter-spacing: 2px;
   }
-
   .circle {
     @include rectangle(200px);
     @include border-radius(50%);
 
-    background-color: adjust-color($profile-card-panel-bg, $alpha: -0.2);
+    background-color: adjust-color($panel-bg, $alpha: -0.2);
     border: 3px solid $profile-card-highlight;
+
     margin: 1rem;
     padding: 1rem;
   }
 
   .bio {
+    @include rectangle(auto, 85%);
     @include border-radius(5px);
     @include flex(column, $align-items: center);
 
-    background-color: adjust-color($profile-card-bio-bg, $alpha: -0.2);
+    background-color: adjust-color($bio-bg, $alpha: -0.2);
+
     margin: 0.5rem 0rem;
     padding: 0.75rem 1rem;
-
-    font-family: $primary-font;
-
-    width: 85%;
 
     .name {
       margin-bottom: 1rem;
 
       color: $font-color-secondary;
-      font-family: $primary-font;
       font-size: get-font-size("md");
       font-weight: get-font-weight("bold");
 
@@ -67,7 +64,6 @@
       margin-bottom: 0.5rem;
 
       color: $font-color-primary;
-      font-family: $secondary-font;
       font-size: get-font-size("md");
       font-weight: get-font-weight("regular");
     }
@@ -76,61 +72,53 @@
       margin-bottom: 0.5rem;
 
       color: $font-color-primary;
-      font-family: $secondary-font;
       font-size: get-font-size("sm");
       font-weight: get-font-weight("regular");
     }
 
     .social-icons {
-        @include flex();
+      @include flex();
 
-        padding: 2rem;
+      padding: 2rem;
 
-      color: $profile-card-social-icon-color;
+      color: $social-icon-color;
 
       .social-icon {
         @include rectangle($base-size * 2.5);
         @include border-radius(5px);
         @include flex(column, center, center);
 
-
-        border: 2px solid $profile-card-social-icon-color;
+        border: 2px solid $social-icon-color;
         margin: 0rem 1.5rem;
         padding: 1.5rem;
 
-        // change size of icon
         font-size: get-font-size("lg");
 
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          cursor: pointer;
-          border: 2px solid $profile-card-social-icon-color-hover;
-          color: $profile-card-social-icon-color-hover;
+          @extend %cursor-pointer;
+
+          border: 2px solid $social-icon-color-hover;
+          color: $social-icon-color-hover;
         }
       }
     }
-  } // end bio
-
+  }
   .skills {
-    // margin: 1rem 1rem 2rem;
-    margin: 1rem;
-
-
+    @include rectangle(auto, 85%);
     @include flex($justify-content: center);
     flex-wrap: wrap;
 
-    color: $font-color-secondary;
-    font-family: $primary-font;
-    font-size: get-font-size("sm");
-
-    width: 85%;
+    margin: 1rem;
 
     .skill-badge {
-
       border: 2px solid $profile-card-highlight;
+      color: $font-color-secondary;
       margin: 0.3rem;
       padding: 0.75rem;
+
+      font-family: $secondary-font;
     }
-  } // end skills
-} // end profile 
+  }
+}

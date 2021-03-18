@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap");
+
+$secondary-font: "Open Sans", sans-serif;
+$primary-font: "Raleway", sans-serif;
+
+// sizes
+$base-size: 16px;
+$font-sizes: (
+  "lg": $base-size * 2.2,
+  "md": $base-size * 1.7,
+  "sm": $base-size * 1.1,
+);
+
+$font-weights: (
+  "thin": 300,
+  "regular": 400,
+  "bold": 600,
+);
+
+$swatch-bg: darkslategray;
+%cursor-pointer {
+    cursor: pointer;
+    
+}
+// $custom-primary: hsl(200, 22%, 24%);
+// $custom-secondary: hsl(15, 88%, 64%);
+// $custom-success: hsl(270, 100%, 26%);
+// $custom-info: hsl(210, 93%, 74%);
+// $custom-warning: hsl(30, 100%, 60%);
+// $custom-danger: hsl(15, 90%, 50%);
+// $custom-light: hsl(210, 13%, 94%);
+// $custom-dark: hsl(233, 100%, 10%);
+
+// $custom-primary: hsl(170, 100%, 18%);
+// $custom-secondary: hsl(170, 22%, 41%);
+// $custom-success: hsl(46, 100%, 50%);
+// $custom-info: hsl(141, 73%, 65%);
+// $custom-warning: hsl(51, 100%, 71%);
+// $custom-danger: hsl(0, 31%, 34%);
+// $custom-light: hsl(40, 60%, 98%);
+// $custom-dark: hsl(0, 0%, 33%);
+
+$base-color: hsl(81, 33%, 23%); // alternative: hsl(200, 33%, 23%);
+$custom-primary: $base-color;
+$custom-secondary: adjust-color($base-color, $hue: 15deg, $lightness: -10%);
+$custom-success: adjust-color($base-color, $hue: 5deg, $saturation: 40%, $lightness: 20%);
+$custom-info: adjust-color($base-color, $hue: -50deg, $lightness: 15%);
+$custom-warning: adjust-color( $base-color, $hue: -50deg, $saturation: 25%, $lightness: 25%);
+$custom-danger: adjust-color( $base-color, $hue: -90deg, $saturation: 15%, $lightness: 15%);
+$custom-dark: adjust-color($base-color, $hue: -270deg, $lightness: -20%);
+$custom-light: adjust-color($base-color, $hue: -240deg, $lightness: 75%);
+
+
+// add all colors in a list
+$custom-colors: $custom-primary,
+                $custom-secondary,
+                $custom-success,
+                $custom-info,
+                $custom-warning,
+                $custom-danger,
+                $custom-dark,
+                $custom-light;
+
+
+$font-color-primary: $custom-light;
+$font-color-secondary: $custom-success;
+
+// profile card
+$profile-card-height: auto;
+$profile-card-width: 45%;
+$profile-card-bg: $custom-primary;
+$profile-card-shadow: adjust-color($profile-card-bg, $lightness: -20%);
+$profile-card-highlight: $custom-success;
+$panel-bg: $custom-dark;
+$bio-bg: $custom-secondary;
+$social-icon-color: $custom-info;
+$social-icon-color-hover: $custom-success;
+$skill-badge-color: $custom-secondary;

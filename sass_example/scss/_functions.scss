@@ -1,6 +1,6 @@
-@use 'custom-variables' as *;
+@use 'variables' as *;
 
-@function get-font-size($size){
+@function get-font-size($size) {
     @return map-get($font-sizes, $size);
 };
 
