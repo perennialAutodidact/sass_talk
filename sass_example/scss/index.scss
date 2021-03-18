@@ -35,7 +35,7 @@ body {
     .swatch {
         @include rectangle(5rem);
         @include flex(col, center, center);
-        @include border-radius(50%, 10%);
+        @include border-radius(50%, 10%, 10%, 50%);
                 
         margin: 1rem;
     }

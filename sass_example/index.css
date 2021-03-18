@@ -10072,9 +10072,9 @@ body {
   align-items: center;
   justify-content: center;
   border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-bottom-right-radius: 50%;
   margin: 1rem;
 }
 .swatches .swatch-1 {
