@@ -10205,10 +10205,6 @@ body {
 .swatches .swatch {
   height: 5rem;
   width: 5rem;
-  display: flex;
-  flex-direction: col;
-  align-items: center;
-  justify-content: center;
   border-top-left-radius: 50%;
   border-top-right-radius: 5%;
   border-bottom-left-radius: 5%;
@@ -10263,3 +10259,5 @@ body {
 .outer .inner:hover {
   background-color: turquoise;
 }
+
+/*# sourceMappingURL=index.css.map */
