@@ -1,8 +1,10 @@
 # Sass Example
 
+![Sass Logo](sass-logo.png)
+
 This project was created to demonstrate the basics of the Sass CSS Preprocessor for a Tech Talk presented by the PDX Code Guild in Portland, Oregon on March 18, 2021.
 
-The Sass shown in this example is by no means an exhaustive collection and is indented to get folks started with Sass.
+The Sass shown in this example is by no means an exhaustive collection and is intended to get folks started with Sass.
 
 ## Install
 
