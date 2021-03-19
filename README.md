@@ -1,6 +1,7 @@
 # Sass Example
 
-![Sass Logo](sass-logo.png)
+<img src="[/keegangood/sass_talk/raw/master/sass-logo.png](https://github.com/keegangood/sass_talk/blob/master/sass-logo.png)" alt="Sass Logo" style="max-width:50%;">
+
 
 This project was created to demonstrate the basics of the Sass CSS Preprocessor for a Tech Talk presented by the PDX Code Guild in Portland, Oregon on March 18, 2021.
 
