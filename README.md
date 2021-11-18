@@ -10,7 +10,7 @@ Watch the presentation [here](https://www.youtube.com/watch?v=RhX2rb10AC4)!
 
 Final Demo Result:
 <br/>
-<img src="/sass-demo.gif" width=400>
+<img src="/sass-demo.gif" width=600>
 
 ## Install
 
