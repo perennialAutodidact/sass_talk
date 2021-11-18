@@ -6,6 +6,11 @@ This project was created to demonstrate the basics of the Sass CSS Preprocessor 
 
 The Sass shown in this example is by no means an exhaustive collection and is intended to get folks started with Sass.
 
+Watch the presentation [here](https://www.youtube.com/watch?v=RhX2rb10AC4)!
+
+Final Demo Result:
+<img src="../sass_talk/sass-demo.gif" width=400>
+
 ## Install
 
 Install the Sass Javascript CLI
