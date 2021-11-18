@@ -17,7 +17,7 @@ Final Demo Result:
 Install the Sass Javascript CLI
 
 ```bash
-npm install -g sass
+$ npm install -g sass
 ```
 
 ## Syntax
@@ -31,13 +31,13 @@ Sass runs entirely in the command line and can compile either a single Sass file
 The following command will read `index.scss` and compile CSS into `index.css`.
 
 ```bash
-sass index.scss:index.css
+$ sass index.scss:index.css
 ```
 
 The following command will read all the files in the `scss/` directory and output CSS into the project directory, represented with dot notation. Any `.scss` files not labeled as a partial with a leading underscore will produce their own `.css` file.
 
 ```bash
-sass ./scss:./
+$ sass ./scss:./
 ```
 
 ## Flags
@@ -49,7 +49,7 @@ By default, Sass will generate `.map.css` files when compiling. These help to ke
 If no `.css.map` files are desired, the `--no-source-map` can be added to the `sass` command
 
 ```bash
-sass ./scss:./ --no-source-map
+$ sass ./scss:./ --no-source-map
 ```
 
 ### --watch
@@ -57,7 +57,7 @@ sass ./scss:./ --no-source-map
 To avoid the need to run the `sass` command after every change to your styles, the `--watch` flag can be added. This will cause `sass` to watch for changes to your Sass file/directory and recompile on each save.
 
 ```bash
-sass ./scss:./ --watch
+$ sass ./scss:./ --watch
 ```
 
 ## Resources
